@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file>assets/classLogo.png</file>
+        <file>assets/Square44x44Logo.scale-400.png</file>
+        <file>assets/LOGO.png</file>
+        <file>assets/pwd.png</file>
+        <file>assets/Admin.png</file>
+        <file>assets/loginBgd2.png</file>
+        <file>assets/loginBgd.png</file>
+        <file>assets/textBgd.png</file>
+        <file>assets/student.png</file>
+    </qresource>
+</RCC>

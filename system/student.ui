@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Student</class>
+ <widget class="QMainWindow" name="Student">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>859</width>
+    <height>782</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生窗口</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="assets.qrc">
+    <normaloff>:/assets/assets/Admin.png</normaloff>:/assets/assets/Admin.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">
+#centralwidget{ border-image:url(:/assets/assets/student.png);}
+</string>
+   </property>
+   <widget class="QPushButton" name="submitPushButton">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>660</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认修改电话</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backPushButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>660</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>返回登陆界面</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>760</y>
+      <width>191</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:black;
+image: url(:/assets/assets/labelBgd.png);
+text-align:centre;
+/*background-image: url(:/assets/assets/textBgd.jpg);*/
+/*background-image: url(:/assets/assets/label.jpg);*/</string>
+    </property>
+    <property name="text">
+     <string>姓名</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TelelineEdit">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>600</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="placeholderText">
+     <string>确认为11位电话</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>610</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+font-size:24px;</string>
+    </property>
+    <property name="text">
+     <string>电话：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>692</x>
+      <y>380</y>
+      <width>101</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>→修改密码</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>380</y>
+      <width>101</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>←个人信息</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-260</x>
+      <y>410</y>
+      <width>491</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="total">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>330</y>
+       <width>271</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+
+image: url(:/assets/assets/textBgd.png);
+text-align:centre;
+/*background-image: url(:/assets/assets/textBgd.jpg);*/
+/*background-image: url(:/assets/assets/label.jpg);*/</string>
+     </property>
+     <property name="text">
+      <string>班级总人数:</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ID">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>241</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+image: url(:/assets/assets/labelBgd.png);
+text-align:centre;
+image: url(:/assets/assets/textBgd.png);</string>
+     </property>
+     <property name="text">
+      <string>学号:</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>0</y>
+       <width>201</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+image: url(:/assets/assets/textBgd.png);
+text-align:centre;
+/*background-image: url(:/assets/assets/textBgd.jpg);*/
+/*background-image: url(:/assets/assets/label.jpg);*/</string>
+     </property>
+     <property name="text">
+      <string>姓名:</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="gender">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>240</y>
+       <width>221</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+image: url(:/assets/assets/textBgd.png);
+text-align:centre;
+/*background-image: url(:/assets/assets/textBgd.jpg);*/
+/*background-image: url(:/assets/assets/label.jpg);*/</string>
+     </property>
+     <property name="text">
+      <string>性别:</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dorm">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>240</y>
+       <width>201</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+image: url(:/assets/assets/textBgd.png);
+text-align:centre;
+/*background-image: url(:/assets/assets/textBgd.jpg);*/
+/*background-image: url(:/assets/assets/label.jpg);*/</string>
+     </property>
+     <property name="text">
+      <string>宿舍:</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>90</y>
+      <width>471</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="pwdOld">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>80</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>请输入原密码：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="pwdNew">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>250</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>请输入新密码：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>40</y>
+       <width>151</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;</string>
+     </property>
+     <property name="text">
+      <string>原密码：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>240</y>
+       <width>141</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;</string>
+     </property>
+     <property name="text">
+      <string>新密码：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>310</y>
+       <width>141</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;</string>
+     </property>
+     <property name="text">
+      <string>确认新密码：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="pwdNew_2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>320</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>请再次输入新密码：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pwdModifyButton">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>390</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>确认修改为新密码</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>390</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>设为默认密码123456</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>859</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="info">
+    <property name="title">
+     <string>个人信息</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="pwd">
+    <property name="title">
+     <string>修改密码</string>
+    </property>
+   </widget>
+   <addaction name="info"/>
+   <addaction name="pwd"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>
